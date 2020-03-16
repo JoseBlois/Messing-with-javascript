@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS\popo.css">
+</head>
+<body>
+<div class="contenedor">
+    <div class="contenedor-inputs">
+        <h2>Ingresa que es lo que quieres escribir</h2>
+        <input type="text" id="numero1" placeholder="¿Qué es lo que deseas escribir?">
+        <h2>Ingresa en que posicion deseas escribirlo</h2>
+        <input type="number" min="1" max="20" id="numero2" placeholder="Posicion deseada">  
+        <input type="button" id="escritor" value="ESCRIBIR EN SELECCIONADO" >
+        <input type="button" id="reinicio" value="REINICIO">
+        <input type="button" id="todos" value="TODOS">
+    </div>
+    <div class="contenedor-outputs">
+        <ol id="lista">
+                <li>...</li>
+                <li>...</li>
+                <li>...</li>
+                <li>...</li>
+                <li>...</li>
+                <li>...</li>
+                <li>...</li>
+                <li>...</li>
+                <li>...</li>
+                <li>...</li>
+                <li>...</li>
+                <li>...</li>
+                <li>...</li>
+                <li>...</li>
+                <li>...</li>
+                <li>...</li>
+                <li>...</li>
+                <li>...</li>
+                <li>...</li>
+                <li>...</li>
+        </ol>
+    </div>
+</div>  
+<div> 
+<section class="cont" id="cont">
+    <input type="button" id="generator" value="GENERAR">
+</section>
+</div>
+<div class="con-btn">
+    <input type="button" id="itemGen1" value="GENERAR OTRO PRIMER PLATO">
+    <input type="button" id="itemGen2" value="GENERAR OTRO SEGUNDO PLATO">
+    <input type="button" id="itemGen3" value="GENERAR OTRO TERCER PLATO">
+</div>
+<div class="item-container" id="item-container">
+    <div id="plato1" class="item-wrapper">
+        <div class="item-img" style="background-image: url(plato1.jpg);" ></div>
+        <div class="text-wrapper">
+            <div class="logo">
+                <img src="ALGO\LUL.png" alt="">    
+            </div>
+            <div class="texto">
+                1 PRIMER PLATO
+            </div>
+
+        </div>
+    </div>
+    <div id="plato2" class="item-wrapper">
+        <div class="item-img" style="background-image: url(plato2.jpg);"></div>
+        <div class="text-wrapper">
+            <div class="logo">
+                <img src="ALGO\LUL.png" alt="">    
+            </div>
+            <div class="texto">
+                2 SEGUNDO PLATO
+            </div>
+
+        </div>
+    </div>
+    <div id="plato3" class="item-wrapper">
+        <div class="item-img" style="background-image: url(plato3.jpg);"></div>
+        <div class="text-wrapper">
+            <div class="logo">
+                <img src="ALGO\LUL.png" alt="">    
+            </div>
+            <div class="texto">
+                3 TERCER PLATO
+            </div>
+
+        </div>
+    </div>
+    
+
+</div>
+<section id="sec" class="sec">
+    <div class="inputos">   
+        <input type="text" class="enter" id="texto" placeholder="Ingrese nuevo parrafo">
+        <input type="button" id="btn-insertar" class="btntext" value="INSERTAR PARRAFO">
+    </div>
+        <div class="lista" id="list">
+    </div>
+</section>
+
+<section class="seccion-2">
+    <ul id="lista-frutas" >
+        <li>
+            <span>Apple</span>
+            <input type="text" value=Apple>
+        </li>
+        <li>
+            <span>Apple</span>
+            <input type="text" value=Apple>
+        </li>
+        <li>
+            <span>Apple</span>
+            <input type="text" value=Apple>
+        </li>
+    </ul>
+</section>
+   
+
+<script src="app.js"></script>
+</body>
+</html>  
