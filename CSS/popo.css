@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: Montserrat;
+}
+input[type="button"]{
+    font-family: Montserrat;
+    font-weight: bold;
+    border: none;
+    background: black;
+    color: white;
+    padding: 1em 2em;
+}
+input[type="button"]:hover{
+    background-color: teal;
+    cursor: pointer;
+}
+.contenedor{
+    width: 100%;
+    background: lightblue;
+    display: flex;
+    justify-content: center;
+    padding: 2em 0.5em;
+}
+.contenedor-inputs{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.contenedor-outputs {
+    flex: 2;
+    border: solid 2px black;
+    padding: 0em 3em;
+}
+.contenedor-outputs ol li {
+    width: max-content;
+    margin-bottom: 0.2rem;
+    margin-top: 0.2rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    font-family: Montserrat;
+}
+.contenedor-outputs ol li:hover{
+    border-left: solid 2px black;
+    border-right: solid 2px black;
+}
+.contenedor-inputs{
+    flex: 1.5;
+}
+.contenedor-inputs input{
+    width: 90%;
+    text-align: center;
+}
+.contenedor-inputs h2{
+    font-size: 16px;
+}
+.contenedor-inputs input[type="text"]{
+    font-size: 1.2rem;
+    padding: 0.3em ;
+}
+.contenedor-inputs input[type="number"]{
+    padding: 1em 0em;
+    box-sizing: border-box;
+    font-size: 1rem;
+}
+.cont{
+    background: lightslategray;
+    margin: 3em auto;
+    margin-bottom: 1.5em;
+    display: grid;
+    grid-template-columns: repeat(3,150px);
+    grid-template-rows: repeat(3,150px);
+    width: min-content;
+    grid-gap: 5px;
+    padding: 5px;
+    justify-content: center;
+}
+.cont div{
+    background: white;
+    border: solid 1px black;
+  
+}
+.cont .negro{
+    background: black;
+}
+.cont div:hover{
+    border:solid 2px rgb(255, 7,7);
+}
+.cont .negro:hover{
+    border:solid 2px rgb(7, 255, 19);
+}
+.sec{
+    width: 60%;
+    margin: 3em auto;
+    background: #FF4554;
+    display: flex;
+    flex-direction: column;
+}
+.sec .inputos{
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.enter {
+    box-sizing: border-box;
+    flex-basis: 80%;
+    padding: 0 1em;
+}
+.btntext{
+    box-sizing: border-box;
+    flex-basis: 20%;
+}
+.sec .lista{
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-start;      
+    word-break: break-word; 
+            }
+.lista .parra{
+    font-family: Montserrat;
+    font-size: 1.3em;
+    display: inline-block;
+    border: solid 1px black;
+    padding: 0.8em 1em;
+    width: 100%;
+    max-width: 100%;
+    margin: 0em;
+    text-align: left;
+    box-sizing: border-box;
+}
+.lista .parra:hover{
+    background: rgb(196, 54, 65);
+    text-decoration: line-through;
+}
+.con-btn{
+    background: lightgray;
+    width: 80%;
+    margin:auto;
+    margin-top: 1em;
+    display: flex;
+    justify-content: space-evenly;
+}
+.con-btn input[type="button"]{
+    width: 30%;
+}
+.item-container{
+    background: rgb(43, 42, 42);
+    margin: 3em auto;
+    margin-top: 1em;
+    display: grid;
+    grid-template-columns: repeat(3,350px);
+    grid-template-rows: auto ;
+    width: min-content;
+    grid-gap: 0.2em;
+    padding: 0.2em;
+}
+.item-wrapper{
+    position: relative;
+    min-width: 350px;
+}
+.item-img{
+    width: 100%;
+    height: 250px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.text-wrapper{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    color: white;
+    text-align: center;
+}
+.logo img{
+    width: 50%;
+    background: transparent;
+}
+.texto{
+    font-weight: bold;
+    font-size: 1.2rem;
+    font-family: Montserrat;
+    color:black;
+    text-shadow: 1px 1px white;
+}
+.seccion-2{
+    background: rgb(126, 81, 209);
+    width: 60%;
+    margin: 2em auto;
+    display: flex;
+    justify-content: center;
+}
+.seccion-2 ul{
+    list-style: none;
+}
+.seccion-2 li{
+    font-family: Montserrat;
+    margin: 0.5em;
+    font-size: 1.2rem;
+    text-align: center;
+    color: white;
+}
+.seccion-2 li input{
+    display: none;
+}
+li.edit span{
+    display: none;
+}
+li.edit input{
+    display: initial;
+}
